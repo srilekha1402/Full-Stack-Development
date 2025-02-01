@@ -1,0 +1,152 @@
+react folder struture 
+
+node modules folder:
+in this all the packages and third party library will be present 
+
+to install boot strap
+poweshell to cmd
+----------cd day1:
+            npm install bootstrap -- click enter
+            
+
+node modules we will see bootstrap after installing
+
+
+-----------------------------
+public folder:
+    .html file -> in old versions but in new version it is separate
+    whenever we run file we get react icon running through svg file which is present in public
+
+------------------
+src folder:
+    main folder
+    used to create components
+----------------------
+
+index.html:
+    only 1 file so in this file multiple components are indirectly connected to this html file
+    so that it displayed in browser
+    -it is a root file
+------------------------------------
+tool named eslint( -ecma script lint) (eslint.config.js)
+    tool for debug purpose.
+    find and fix problems 
+
+
+    -----------------------------------
+package.json:
+    it stores installed packages or dependencies
+    and also third party libraries
+
+----------------------------------------
+readme.md:
+    used for github
+    
+
+    //babel
+        react cant understand js from above es6 so we use babel
+        it converts advanced version concept(after es6) of js to old version(befor es6) concept of js.
+        also called as compiler or transpiler.
+
+
+----------------------------------------------------
+COMPONENTS IN react:
+    components are basic building blocks in react.
+    these are reusable
+
+    2 types of components:
+        1) class based components
+        2) function based components(presentational components/ dumb components)
+
+    
+    1)CLASS based
+        it is ES6 VERSION classic js
+        it uses react life cycle
+        it is a statefull () component.
+        uses render() method
+        ---render() methods renders component on the web page.
+        it uses an constructor to store data and it uses extends keyword.
+
+
+
+import React from 'react';//importing from react dependency
+class demo extends React.Component{
+    return(){
+        return <h1>i am class based component</h1>
+    }
+}
+export default demo;
+
+
+2) FUNCTION BASED COMPONENT.
+    it is a js pure function
+    it doesnt use react life cycle
+    it doesnt take ant render() method 
+    -- it is a stateless but...
+    afer 16.8 funstion based component became statefull because of hooks
+    there is no constructor and extends used in this.
+------------------------------
+way 2:
+import React from 'react';
+function demo1(){
+    return (
+        <h1>fbc</h1>
+    )
+}
+export default demo1
+-------------------------
+way 1:
+import React from 'react';
+let demo2 =()=>{
+    return (
+        <h1>fbc</h1>
+    )
+}
+export default demo2
+
+-------------------------------------------------
+executing it
+App.jsx:
+    exported and imported in  amin.jsx
+
+in src - new folder(components) -> create components(starting letter must be capital for components with extensions with .jsx nad .js)
+.jsx-creates react icon to understand it as react for developers
+
+
+in commponents -> Cbc.jsx 
+    here create a class based structure
+
+    import React from 'react';
+    class Cbc extends from React.Component{
+        render(){
+            return <h1>IAM CLASS BASED COMPONENT</h1>
+        }
+    }
+    export default Cbc;
+
+in main.jsx import the above Cbc.jsx code.
+    remove <App/> and replace <Cbc/>
+    before that import that component.
+
+now to run the application tern=minal->powershell to cmd -> cd day1 -> cd app
+
+
+Fbc.jsx:
+    import React from 'react';
+    const Fbc =()=>{
+    return (
+        <h1>I AM FUNCTION BASED COMPONENT</h1>
+    )
+}
+export default Fbc;
+
+ same process render the component
+
+
+
+
+
+
+
+
+
