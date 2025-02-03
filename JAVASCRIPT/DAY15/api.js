@@ -21,12 +21,13 @@
 //    })
 // }
 // demo()
-
+/*
+// -------------------------------------------------------------------------------------------------------------------------------------
 let btn = document.getElementById("btn")
 console.log(btn);
 
 btn.onclick=()=>{
-    let search = document.getElementById("search").value 
+    let search = document.getElementById("search").value;
     console.log(search);
     let page = 30;
     window.fetch(`https://pixabay.com/api/?key=48495658-7ac0e7b6a23ef6f2118dedd90&q=${search}&image_type=photo&pretty=true&per_page=${page}`)
@@ -34,7 +35,7 @@ btn.onclick=()=>{
     .then((res)=>{
         console.log(res);
         console.log(res.hits);
-        
+
         res.hits.map((x)=>{
             console.log(x);
         
@@ -48,3 +49,36 @@ btn.onclick=()=>{
     })
     
 }
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+let btn = document.getElementById("btn");
+console.log(btn);
+
+btn.onclick = () => {
+    let search = document.getElementById("search").value; // Get the value from the search box
+    console.log(search);
+    let page = 30;
+    window.fetch(`https://pixabay.com/api/?key=48495658-7ac0e7b6a23ef6f2118dedd90&q=${search}&image_type=photo&per_page=${page}`)
+    .then((data) => data.json())
+    .then((res) => {
+        console.log(res);
+        console.log(res.hits);
+
+        let div = document.getElementById("div");
+        console.log(div);
+        
+        div.innerHTML = "";
+
+        res.hits.map((x) => {
+            console.log(x);
+            let img = document.createElement("img");
+            img.src = x.previewURL;
+            div.appendChild(img);
+        });
+    })
+    .catch((error) => {
+        console.error("Error fetching images:", error);
+    });
+};

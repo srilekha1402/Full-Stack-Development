@@ -1,11 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import Parent from './props/Parent.jsx';
+// import App from './App.jsx'
+import Me from './components/Me';
+import BiodataParent from './components/BiodataParent';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    
-    <Parent/>
+   <Me/>
+   <BiodataParent/>
   </StrictMode>,
 )
