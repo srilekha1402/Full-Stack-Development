@@ -14,6 +14,9 @@ a, u {
     padding: 10px;
     
   }
+a:hover{
+    color: #1ed760;
+}
 body{
     font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva , sans-serif;
 }
@@ -207,12 +210,12 @@ ol li:hover{
 #section3{
     height: 640px;
     width: 100%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     justify-content: center;
 }
 #article3{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 600px;
     width: 90%;
 }
@@ -231,10 +234,12 @@ ol li:hover{
     padding: 20px;
 }
 #summary{
-    border: 2px solid black;
-    width: inherit;
+   
+    /* width: inherit; */
     height: 78px;
-    margin: 10px;
+    width: 80%;
+    margin: auto;
+    /* border: 2px solid black; */
     
 }
 #footer{
@@ -253,22 +258,26 @@ ol li:hover{
 }
 #spotifydiv {
     justify-content: flex-start;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     height: 346px;
-    width: 146px;
+    width: 190px;
+    padding-right: 100px;
 }
 #ulfooter{
     display: flex;
   flex-direction: column;
   list-style: none;
- 
+  font-family: var(--encore-body-font-stack);
   width: 165px;
   height: 346px;
-  border: 2px solid white;
+  /* border: 2px solid white; */
 }
 #h2footer{
     font-size: 12px;
     padding: 10px;
+    color: #919496;
+    font-family: var(--encore-body-font-stack);
+    letter-spacing: 1px;
     
 }
 #ulfooter2{
@@ -278,5 +287,104 @@ ol li:hover{
  
   width: 140px;
   height: 346px;
-  border: 2px solid white;
+  /* border: 2px solid white; */
+}
+#svgdiv1{
+    /* border: 2px solid white; */
+    display: flex;
+    width: 96%;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+    padding-left: 1050px;
+    
+
+}
+#svgdiv1 a:hover{
+    color: #1ed760;
+}
+
+#lastdiv{
+    height: 40px;
+    width: 70%;
+    /* border:2px solid #fff; */
+    margin: auto;
+    display: flex;
+    list-style: none;
+    align-items: start;
+}
+#lastol{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+#lastol li{
+    color: #919496;
+    font-size: 12px;
+    justify-content: space-between;
+    padding: 10px;
+}
+#lastol li:hover{
+    color: #1ed760;
+}
+#spotifyab{
+    color:#919496 ;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 94px;
+}
+#paragraphhove :hover{
+    color: #1ed760;
+}
+
+
+
+
+
+.faq-container {
+    width: 100%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item {
+    /* border-bottom: 1px solid #ddd; */
+    padding: 10px 0;
+    
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#arrow {
+    transition: transform 0.3s ease-in-out;
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    text-align: left;
+    color: #555;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active #arrow {
+    transform: rotate(360deg);
 }

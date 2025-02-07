@@ -1,0 +1,193 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+#maindiv{
+    background-image: url(background.svg);
+    background-attachment: scroll;
+    background-color: #454647;
+}
+
+#nav{
+    /* border: 2px solid; */
+    height: 73px;
+    background-color: #313232;
+    color: #fff;
+   
+}
+
+#sub-nav{
+    /* border: 2px solid red; */
+    height: inherit;
+    /* width: 98%; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#div1{
+    height: 44px;
+    width: 269px;
+    padding: 12px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+#sub-nav svg{
+    height: 20px;
+    width: 20px;
+    fill: #fff;
+    
+}
+
+#sub-nav ol{
+    list-style: none;
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: end;
+    justify-content:end;
+    width: 500px;
+    font-size: 20px;
+    font-weight: 300;
+}
+#sub-nav ol li{
+    padding: 20px;
+}
+
+ol li:hover{
+    color: rgb(144, 142, 142);
+    cursor: pointer;
+    
+}
+#div1 svg:hover{
+    color: rgb(144, 142, 142);
+    cursor: pointer;
+}
+
+.status-indicator.status-indicator-none {
+    background-color: #2ecc71;
+}
+
+#div2{
+    height: 590px;
+    width: 100%;
+    /* border: 2px solid black; */
+   
+    
+}
+#section{
+    height: 535px;
+    width: 73%;
+    /* border: 2px solid white; */
+    margin: auto;
+    
+}
+#sectiondiv{
+    height: 370px;
+    width: 950px;
+    margin: auto;
+    /* border: 2px solid white; */
+    margin-left: 0px;
+    /* margin-top: 20px; */
+    padding-top: 20px;
+}
+#sectiondiv h1{
+    font-size: 48px;
+    letter-spacing: 0.41px;
+    font-weight: 500;
+    font-family: Ubuntu,sans-serif;
+    color: #fff;
+}
+#sectiondiv h2{
+    font-size: 24px;
+    font-weight: 1;
+    letter-spacing: 0.2px;
+    color: #ebebeb;
+    margin-top:24px;
+
+}
+#sectiondiv input{
+    height: 48px;
+    width: 900px;
+    font-size: 19px;
+    margin-top: 70px;
+}
+#div2div{
+    height: 59px;
+    width: 100%;
+    background-color: #D9643A;
+    color: #fff;
+    /* margin-top: 40px; */
+}
+#firstp{
+    padding: 10px;
+    padding-bottom: 3px;
+    font-size: 16px;
+    font-weight: 150;
+    color: #141515;
+}
+#secondp{
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #141515;
+}
+
+#div3{
+    display: block;
+    margin-left: 180px;
+    justify-content: center;
+    align-items: center;
+    height: 334px;
+    width: 900px;
+   
+}
+#heading{
+    font-size: 48px;
+    letter-spacing: 0.41px;
+    font-weight: 400;
+    font-family: "Ubuntu", sans-serif;
+    color: #fff;
+    padding-top: 25px;
+}
+
+#footer{
+    width: 100%;
+    border: 2px solid black;
+    height: 264.667px;
+    background-color: #242424;
+}
+
+#footerdiv{
+    border: 2px solid white;
+    height: 260px;
+    width: 250px;
+    text-align: center;
+    padding-top: 20px;
+
+}
+#footerdiv p{
+    color: #a6a6a6;
+   padding: 10px;
+    
+}
+#innerdivfooter{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    list-style-type: none;
+}
+#innerdivfooter svg{
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+    cursor: pointer;
+   
+
+}
