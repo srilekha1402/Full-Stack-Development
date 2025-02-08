@@ -3,11 +3,11 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 // import App from './App.jsx'
 import Me from './components/Me';
-import BiodataParent from './components/BiodataParent';
+import Parent from './components/Parent';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
    <Me/>
-   <BiodataParent/>
+  <Parent/>
   </StrictMode>,
 )

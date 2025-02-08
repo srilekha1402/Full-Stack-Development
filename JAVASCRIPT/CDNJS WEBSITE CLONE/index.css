@@ -162,6 +162,10 @@ ol li:hover{
     border: 2px solid black;
     height: 264.667px;
     background-color: #242424;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #footerdiv{
@@ -169,7 +173,7 @@ ol li:hover{
     height: 260px;
     width: 250px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 30px;
 
 }
 #footerdiv p{
@@ -184,10 +188,47 @@ ol li:hover{
     list-style-type: none;
 }
 #innerdivfooter svg{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     fill: #fff;
     cursor: pointer;
    
 
+}
+#footerol1{
+    border: 2px solid white;
+    height: 260px;
+    width: 250px;
+    /* text-align: center; */
+    padding-top: 30px;
+    display:table-column;
+    padding-left: 40px;
+}
+#footerol2{
+    border: 2px solid white;
+    height: 260px;
+    width: 250px;
+    /* text-align: center; */
+    padding-top: 30px;
+    padding-left: 30px;
+}
+#footerol3{
+    border: 2px solid white;
+    height: 260px;
+    width: 250px;
+    /* text-align: center; */
+    padding-top: 30px;
+    
+}
+
+a{
+    text-decoration: none;
+    padding: 2px;
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+    
+}
+a:hover{
+    cursor: pointer;
+    color: #D9643A;
 }
