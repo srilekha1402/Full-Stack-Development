@@ -123,6 +123,7 @@ ol li:hover{
     width: 100%;
     background-color: #D9643A;
     color: #fff;
+    
     /* margin-top: 40px; */
 }
 #firstp{
@@ -169,7 +170,7 @@ ol li:hover{
 }
 
 #footerdiv{
-    border: 2px solid white;
+    /* border: 2px solid white; */
     height: 260px;
     width: 250px;
     text-align: center;
@@ -196,7 +197,7 @@ ol li:hover{
 
 }
 #footerol1{
-    border: 2px solid white;
+    /* border: 2px solid white; */
     height: 260px;
     width: 250px;
     /* text-align: center; */
@@ -205,7 +206,7 @@ ol li:hover{
     padding-left: 40px;
 }
 #footerol2{
-    border: 2px solid white;
+    /* border: 2px solid white; */
     height: 260px;
     width: 250px;
     /* text-align: center; */
@@ -213,19 +214,25 @@ ol li:hover{
     padding-left: 30px;
 }
 #footerol3{
-    border: 2px solid white;
+    /* border: 2px solid white; */
     height: 260px;
     width: 250px;
     /* text-align: center; */
     padding-top: 30px;
     
 }
+#footerol3 a{
+    /* padding-bottom: 15px; */
+    font-weight: 100;
+}
+
 
 a{
     text-decoration: none;
     padding: 2px;
-    color: #fff;
+    color: #ebebeb;
     font-family: "Ubuntu", sans-serif;
+    font-weight: 10;
     
 }
 a:hover{

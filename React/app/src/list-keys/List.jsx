@@ -63,11 +63,10 @@ const List = (props) => {
         {
             props.main.map((x)=>{
                 return(
-                    <>
-                    <ol>
-                        <li key={x.id}>{x.name}</li>
-                    </ol>
-                    </>
+                   <Fragment key={x.id}>
+                    <li>{x.name}</li>
+                   </Fragment>
+
                 )
             })
         }
