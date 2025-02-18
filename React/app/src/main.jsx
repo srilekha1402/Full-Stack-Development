@@ -1,11 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-// import './index.css'
-import UseEffect from './useeffect/UseEffect'
+import './index.css'
+import './App.css';
+import Child from './HOC/Child'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <UseEffect/>
+    <Child/>
   </StrictMode>,
 )
- 
+  
