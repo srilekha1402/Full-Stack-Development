@@ -52,7 +52,7 @@ const Child = ({arr1}) => {
                                 <td>{x.id}</td>
                                 <td>{x.role}</td>
                             </tr>
-                        )
+                         )
                     })
                 }
             </tbody>
