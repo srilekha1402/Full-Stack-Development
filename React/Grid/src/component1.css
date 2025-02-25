@@ -1,0 +1,32 @@
+
+.parent{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-columns: 15% 70% 15%;
+}
+.header{
+    background-color: antiquewhite;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+.leftmenu{
+    background-color: aqua;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.main{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-color: rgb(176, 246, 197);
+}
+.rightmenu{
+    background-color: aquamarine;
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+.footer{
+    grid-row: 3/4;
+    grid-column: 1/4;
+    background-color: bisque;
+}
