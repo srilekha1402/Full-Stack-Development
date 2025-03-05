@@ -1,0 +1,13 @@
+.navbar{
+    background-color: aquamarine !important;
+    /* background-color: aquamarine;   if we dont use !important just remove the inline style */
+}
+.img{
+    margin: auto;
+}
+#sectioncard{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
